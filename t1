@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int feet, inches;
+    double cm;
+    cout << "Enter the number of feet\n";
+    cin >> feet;
+    cout << "Enter the number of inches\n";
+    cin >> inches;
+    cout << "You have entered " << feet << "ft " << inches << "in.\n";
+    cout << "The equivalent in centimetres is ";
+    cm = (((feet*12) + inches)*2.54);
+    cout << cm << "cm\n";
+    cout << "The equivalent in metres is ";
+    cout << cm / 100 << "m\n";
+    return 0;
+}
